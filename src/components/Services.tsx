@@ -1,5 +1,6 @@
+
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Users, User, Briefcase, Award, GraduationCap } from 'lucide-react';
+import { Users, User, GraduationCap } from 'lucide-react';
 
 const services = [
   {
@@ -16,16 +17,6 @@ const services = [
     icon: Users,
     title: 'Group Conversation Classes',
     description: 'Practice your speaking and listening skills in a fun, interactive, and low-pressure group setting with students at your level.'
-  },
-  {
-    icon: Briefcase,
-    title: 'Business English',
-    description: 'Enhance your professional communication. We’ll cover presentations, negotiations, emails, and industry-specific vocabulary.'
-  },
-  {
-    icon: Award,
-    title: 'Exam Preparation (IELTS/TOEFL)',
-    description: 'Achieve your target score with proven strategies, practice tests, and expert feedback on all sections of the exam.'
   }
 ];
 
@@ -38,7 +29,7 @@ const Services = () => {
           Whether you're a beginner or an advanced learner, I have a class that fits your needs.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <Card key={index} className="flex flex-col text-center items-center p-6 bg-card transition-all hover:shadow-lg hover:-translate-y-2">
             <CardHeader className="p-0 mb-4">
