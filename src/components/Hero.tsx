@@ -9,7 +9,7 @@ const Hero = () => {
           Unlock Your English Potential, One Lesson at a Time
         </h1>
         <p className="text-lg text-muted-foreground">
-          Welcome! I'm Jessica, a certified English teacher dedicated to helping you achieve fluency and confidence through personalized online lessons.
+          Welcome! I'm Ms. Milica, an English teacher dedicated to helping you achieve fluency and confidence through personalized online lessons.
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" asChild>
@@ -22,7 +22,7 @@ const Hero = () => {
       </div>
       <div className="relative">
         <img
-          src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop"
+          src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1974&auto=format&fit=crop"
           alt="Teacher smiling and holding books"
           className="rounded-xl shadow-xl w-full h-auto object-cover aspect-[4/3]"
         />

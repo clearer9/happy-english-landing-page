@@ -1,8 +1,12 @@
-
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
-import { Users, User, Briefcase, Award } from 'lucide-react';
+import { Users, User, Briefcase, Award, GraduationCap } from 'lucide-react';
 
 const services = [
+  {
+    icon: GraduationCap,
+    title: "Beginner's Welcome",
+    description: "Just starting? Our beginner classes provide a solid foundation in English, focusing on basic vocabulary and simple conversations."
+  },
   {
     icon: User,
     title: 'One-on-One Lessons',
@@ -34,7 +38,7 @@ const Services = () => {
           Whether you're a beginner or an advanced learner, I have a class that fits your needs.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8">
         {services.map((service, index) => (
           <Card key={index} className="flex flex-col text-center items-center p-6 bg-card transition-all hover:shadow-lg hover:-translate-y-2">
             <CardHeader className="p-0 mb-4">

@@ -1,7 +1,7 @@
 
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
-import About from '@/components/About';
+import MeetMilica from '@/components/MeetMilica';
 import Services from '@/components/Services';
 import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
@@ -13,7 +13,7 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
-        <About />
+        <MeetMilica />
         <Services />
         <Testimonials />
         <Contact />

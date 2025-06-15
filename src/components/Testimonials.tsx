@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Yuki T.',
     location: 'Japan',
     avatar: 'YT',
-    quote: "Jessica is an amazing teacher! My confidence in speaking has grown so much. Her classes are always fun and I learn something new every time."
+    quote: "Ms. Milica is an amazing teacher! My confidence in speaking has grown so much. Her classes are always fun and I learn something new every time."
   },
   {
     name: 'Carlos G.',
@@ -19,7 +19,7 @@ const testimonials = [
     name: 'Marie L.',
     location: 'France',
     avatar: 'ML',
-    quote: "I passed my IELTS exam with a higher score than I needed, all thanks to Jessica's guidance. She knew exactly what I needed to focus on."
+    quote: "I passed my IELTS exam with a higher score than I needed, all thanks to Ms. Milica's guidance. She knew exactly what I needed to focus on."
   }
 ];
 
