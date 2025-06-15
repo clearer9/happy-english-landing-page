@@ -1,32 +1,35 @@
 
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Users, User, GraduationCap } from 'lucide-react';
-
-const services = [
-  {
-    icon: GraduationCap,
-    title: "Beginner's Welcome",
-    description: "Just starting? Our beginner classes provide a solid foundation in English, focusing on basic vocabulary and simple conversations."
-  },
-  {
-    icon: User,
-    title: 'One-on-One Lessons',
-    description: 'Get fully personalized lessons tailored to your specific goals, learning style, and pace. The fastest way to see improvement.'
-  },
-  {
-    icon: Users,
-    title: 'Group Conversation Classes',
-    description: 'Practice your speaking and listening skills in a fun, interactive, and low-pressure group setting with students at your level.'
-  }
-];
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Services = () => {
+  const { t } = useLanguage();
+
+  const services = [
+    {
+      icon: GraduationCap,
+      title: t('services.beginner.title'),
+      description: t('services.beginner.desc')
+    },
+    {
+      icon: User,
+      title: t('services.oneOnOne.title'),
+      description: t('services.oneOnOne.desc')
+    },
+    {
+      icon: Users,
+      title: t('services.group.title'),
+      description: t('services.group.desc')
+    }
+  ];
+
   return (
     <section id="services" className="container py-20 md:py-32 max-w-7xl">
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-bold">Find the Perfect Class for You</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">{t('services.title')}</h2>
         <p className="text-lg text-muted-foreground mt-2 max-w-2xl mx-auto">
-          Whether you're a beginner or an advanced learner, I have a class that fits your needs.
+          {t('services.subtitle')}
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

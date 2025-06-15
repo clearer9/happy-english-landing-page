@@ -1,22 +1,25 @@
 
 import { Button } from '@/components/ui/button';
+import { useLanguage } from '@/contexts/LanguageContext';
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="container grid lg:grid-cols-2 gap-12 items-center py-20 md:py-32 max-w-7xl">
       <div className="flex flex-col items-start gap-6">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold !leading-tight">
-          Unlock Your English Potential, One Lesson at a Time
+          {t('hero.title')}
         </h1>
         <p className="text-lg text-muted-foreground">
-          Welcome! I'm Ms. Milica, an English teacher dedicated to helping you achieve fluency and confidence through personalized online lessons.
+          {t('hero.subtitle')}
         </p>
         <div className="flex flex-wrap gap-4">
           <Button size="lg" asChild>
-            <a href="#services">Explore Classes</a>
+            <a href="#services">{t('hero.exploreClasses')}</a>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <a href="#contact">Book a Free Trial</a>
+            <a href="#contact">{t('hero.bookTrial')}</a>
           </Button>
         </div>
       </div>
