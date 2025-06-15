@@ -9,6 +9,7 @@ import { useLanguage } from '@/contexts/LanguageContext';
 import { Send, ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'sonner';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactForm = () => {
   const { t } = useLanguage();
@@ -32,24 +33,24 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Create mailto link with form data
-      const subject = encodeURIComponent('English Lesson Consultation Request');
-      const body = encodeURIComponent(`
-From: ${formData.email}
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: {
+          email: formData.email,
+          request: formData.request
+        }
+      });
 
-Request:
-${formData.request}
-      `);
-      
-      const mailtoLink = `mailto:vesna@usa.com?subject=${subject}&body=${body}`;
-      window.location.href = mailtoLink;
+      if (error) {
+        throw error;
+      }
 
-      toast.success('Email client opened! Please send the email to complete your request.');
+      toast.success('Your message has been sent successfully! We\'ll get back to you soon.');
       
       // Reset form
       setFormData({ email: '', request: '' });
     } catch (error) {
-      toast.error('Something went wrong. Please try again.');
+      console.error('Error sending email:', error);
+      toast.error('Failed to send message. Please try again.');
     } finally {
       setIsSubmitting(false);
     }
