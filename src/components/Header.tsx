@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Menu, Globe } from 'lucide-react';
+import { Menu, Globe, Flag } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 const Header = () => {
@@ -32,15 +32,18 @@ const Header = () => {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Select value={language} onValueChange={(value: 'en' | 'sr') => setLanguage(value)}>
-            <SelectTrigger className="w-20">
-              <SelectValue />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="en">EN</SelectItem>
-              <SelectItem value="sr">SR</SelectItem>
-            </SelectContent>
-          </Select>
+          <div className="flex items-center gap-2">
+            <Flag className="h-4 w-4 text-muted-foreground" />
+            <Select value={language} onValueChange={(value: 'en' | 'sr') => setLanguage(value)}>
+              <SelectTrigger className="w-20">
+                <SelectValue />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="en">EN</SelectItem>
+                <SelectItem value="sr">SR</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
           <Button asChild>
             <a href="#contact">{t('nav.bookCall')}</a>
           </Button>
@@ -61,6 +64,10 @@ const Header = () => {
                   <span>Global English Boost</span>
                 </a>
                 <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <Flag className="h-4 w-4 text-muted-foreground" />
+                    <span className="text-sm text-muted-foreground">Language</span>
+                  </div>
                   <Select value={language} onValueChange={(value: 'en' | 'sr') => setLanguage(value)}>
                     <SelectTrigger className="w-full">
                       <SelectValue />
