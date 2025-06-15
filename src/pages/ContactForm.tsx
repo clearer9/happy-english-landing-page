@@ -50,7 +50,13 @@ const ContactForm = () => {
       setFormData({ email: '', request: '' });
     } catch (error) {
       console.error('Error sending email:', error);
-      toast.error('Failed to send message. Please try again.');
+      
+      // Check if it's the Supabase configuration error
+      if (error.message?.includes('Supabase not configured')) {
+        toast.error('Email service not configured yet. Please contact us directly at giftastix@gmail.com');
+      } else {
+        toast.error('Failed to send message. Please try again.');
+      }
     } finally {
       setIsSubmitting(false);
     }
