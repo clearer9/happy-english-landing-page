@@ -1,73 +1,101 @@
-# Welcome to your Lovable project
 
-## Project info
+# Global English Boost - Landing Page
 
-**URL**: https://lovable.dev/projects/3da86ff3-be78-44af-b2f6-e80ac7fc3c5c
+A modern, multilingual landing page for English learning services built with React, TypeScript, and Tailwind CSS.
 
-## How can I edit this code?
+## 🌟 Features
 
-There are several ways of editing your application.
+- **Multilingual Support**: English and Serbian language options
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **Modern UI**: Built with shadcn/ui components and Tailwind CSS
+- **Booking System**: Integrated consultation booking functionality
+- **Contact Forms**: Email integration with Supabase Edge Functions
+- **Fast Performance**: Built with Vite for optimal loading speed
 
-**Use Lovable**
+## 🚀 Live Demo
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3da86ff3-be78-44af-b2f6-e80ac7fc3c5c) and start prompting.
+Visit the live site: [https://yourusername.github.io/english-learning-landing-page/](https://yourusername.github.io/english-learning-landing-page/)
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technologies Used
 
-**Use your preferred IDE**
+- **React 18** - Modern React with hooks
+- **TypeScript** - Type-safe JavaScript
+- **Tailwind CSS** - Utility-first CSS framework
+- **shadcn/ui** - Beautiful, accessible UI components
+- **Vite** - Fast build tool and dev server
+- **React Router** - Client-side routing
+- **Supabase** - Backend services and email functions
+- **Lucide React** - Beautiful icons
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation & Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/english-learning-landing-page.git
+cd english-learning-landing-page
+```
 
-Follow these steps:
+2. Install dependencies:
+```bash
+npm install
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open [http://localhost:8080](http://localhost:8080) in your browser
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Deployment
 
-**Use GitHub Codespaces**
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Automatic Deployment
+1. Push your code to the `main` branch
+2. GitHub Actions will automatically build and deploy the site
+3. Your site will be available at `https://yourusername.github.io/english-learning-landing-page/`
 
-## What technologies are used for this project?
+### Manual Build
+```bash
+npm run build
+```
 
-This project is built with:
+The built files will be in the `dist/` directory.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📧 Contact Form Setup
 
-## How can I deploy this project?
+The contact form uses Supabase Edge Functions. To set it up:
 
-Simply open [Lovable](https://lovable.dev/projects/3da86ff3-be78-44af-b2f6-e80ac7fc3c5c) and click on Share -> Publish.
+1. Create a Supabase project at [supabase.com](https://supabase.com)
+2. Deploy the edge function in `supabase/functions/send-contact-email/`
+3. Set up your Resend API key in Supabase secrets
+4. Update the email recipients in the edge function
 
-## Can I connect a custom domain to my Lovable project?
+## 🌍 Languages
 
-Yes, you can!
+- English (EN)
+- Serbian (SR)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📱 Responsive Design
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+The landing page is fully responsive and optimized for:
+- Desktop (1024px+)
+- Tablet (768px - 1023px)
+- Mobile (320px - 767px)
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/new-feature`
+3. Commit your changes: `git commit -am 'Add new feature'`
+4. Push to the branch: `git push origin feature/new-feature`
+5. Submit a pull request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+Created with ❤️ using [Lovable](https://lovable.dev)
