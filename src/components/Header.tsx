@@ -5,10 +5,12 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Menu, Globe } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
+  const navigate = useNavigate();
 
   const navLinks = [
     { href: '#services', label: t('nav.services') },
@@ -44,8 +46,8 @@ const Header = () => {
               </SelectContent>
             </Select>
           </div>
-          <Button asChild>
-            <a href="#contact">{t('nav.bookCall')}</a>
+          <Button onClick={() => navigate('/book-consultation')}>
+            {t('nav.bookCall')}
           </Button>
         </div>
 
@@ -85,8 +87,8 @@ const Header = () => {
                     </a>
                   ))}
                 </nav>
-                <Button asChild className="mt-4">
-                  <a href="#contact" onClick={() => setIsOpen(false)}>{t('nav.bookCall')}</a>
+                <Button onClick={() => { navigate('/book-consultation'); setIsOpen(false); }} className="mt-4">
+                  {t('nav.bookCall')}
                 </Button>
               </div>
             </SheetContent>
