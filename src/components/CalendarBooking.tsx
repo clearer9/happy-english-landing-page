@@ -15,7 +15,6 @@ const CalendarBooking = () => {
     email: '',
     date: '',
     time: '',
-    duration: '30',
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -24,6 +23,9 @@ const CalendarBooking = () => {
   const timeSlots = [
     '09:00', '10:00', '11:00', '12:00', '13:00', '14:00', '15:00', '16:00', '17:00'
   ];
+
+  // Fixed duration of 30 minutes
+  const duration = 30;
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -41,7 +43,7 @@ const CalendarBooking = () => {
   };
 
   const createGoogleCalendarEvent = () => {
-    const { name, email, date, time, duration, message } = formData;
+    const { name, email, date, time, message } = formData;
     
     if (!name || !email || !date || !time) {
       toast.error('Please fill in all required fields');
@@ -50,7 +52,7 @@ const CalendarBooking = () => {
 
     // Create start and end dates
     const startDateTime = new Date(`${date}T${time}:00`);
-    const endDateTime = new Date(startDateTime.getTime() + parseInt(duration) * 60000);
+    const endDateTime = new Date(startDateTime.getTime() + duration * 60000);
 
     // Format dates for Google Calendar
     const formatDate = (date: Date) => {
@@ -101,7 +103,7 @@ const CalendarBooking = () => {
           <CardTitle className="text-2xl">Book Your Consultation</CardTitle>
         </div>
         <CardDescription>
-          Schedule a free English learning consultation. We'll discuss your goals and create a personalized learning plan.
+          Schedule a free 30-minute English learning consultation. We'll discuss your goals and create a personalized learning plan.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -139,7 +141,7 @@ const CalendarBooking = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="date" className="flex items-center gap-2">
                 <Calendar className="w-4 h-4" />
@@ -174,20 +176,6 @@ const CalendarBooking = () => {
                 </SelectContent>
               </Select>
             </div>
-
-            <div className="space-y-2">
-              <Label htmlFor="duration">Duration</Label>
-              <Select value={formData.duration} onValueChange={(value) => handleSelectChange('duration', value)}>
-                <SelectTrigger>
-                  <SelectValue />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="30">30 minutes</SelectItem>
-                  <SelectItem value="45">45 minutes</SelectItem>
-                  <SelectItem value="60">1 hour</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
           </div>
 
           <div className="space-y-2">
@@ -212,7 +200,7 @@ const CalendarBooking = () => {
             disabled={isSubmitting}
           >
             <Calendar className="w-4 h-4 mr-2" />
-            {isSubmitting ? 'Creating Event...' : 'Book Consultation'}
+            {isSubmitting ? 'Creating Event...' : 'Book 30-min Consultation'}
           </Button>
 
           <p className="text-sm text-muted-foreground text-center">
