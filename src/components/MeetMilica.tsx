@@ -3,12 +3,9 @@ const MeetMilica = () => {
   return (
     <section id="about" className="w-full bg-secondary py-20 md:py-32">
       <div className="container grid lg:grid-cols-2 gap-12 items-center max-w-7xl">
-        <div className="relative">
-          <img
-            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974&auto=format&fit=crop"
-            alt="Teacher working on a laptop at home"
-            className="rounded-xl shadow-xl w-full h-auto object-cover aspect-[4/3]"
-          />
+        <div className="relative flex flex-col items-center justify-center bg-white rounded-xl shadow-xl aspect-[4/3] p-8">
+          <div className="text-6xl font-bold text-primary mb-4">GEB</div>
+          <p className="text-xl font-semibold text-center">Meet Global English Boost</p>
         </div>
         <div className="flex flex-col items-start gap-4">
           <h2 className="text-3xl md:text-4xl font-bold">Meet Ms. Milica</h2>
