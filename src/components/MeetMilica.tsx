@@ -8,7 +8,7 @@ const MeetMilica = () => {
           <p className="text-xl font-semibold text-center">Meet Global English Boost</p>
         </div>
         <div className="flex flex-col items-start gap-4">
-          <h2 className="text-3xl md:text-4xl font-bold">Meet Ms. Milica</h2>
+          <h2 className="text-3xl md:text-4xl font-bold">Meet Miss Milica</h2>
           <p className="text-lg text-muted-foreground">
             Hi, I'm Milica! My teaching philosophy is centered around creating a dynamic, supportive, and immersive environment where students feel comfortable to practice and grow.
           </p>

@@ -19,7 +19,7 @@ const translations = {
     
     // Hero
     'hero.title': 'Unlock Your English Potential, One Lesson at a Time',
-    'hero.subtitle': "Welcome! I'm Ms. Milica, an English teacher dedicated to helping you achieve fluency and confidence through personalized online lessons.",
+    'hero.subtitle': "Welcome! I'm Miss Milica, an English teacher dedicated to helping you achieve fluency and confidence through personalized online lessons.",
     'hero.exploreClasses': 'Explore Classes',
     'hero.bookTrial': 'Book a Free Trial',
     
@@ -51,7 +51,7 @@ const translations = {
     
     // Hero
     'hero.title': 'Otključajte svoj potencijal engleskog, lekciju po lekciju',
-    'hero.subtitle': 'Dobrodošli! Ja sam gospođa Milica, nastavnica engleskog posvećena tome da vam pomognem da postignete tečnost i samopouzdanje kroz personalizovane online časove.',
+    'hero.subtitle': 'Dobrodošli! Ja sam gospođica Milica, nastavnica engleskog posvećena tome da vam pomognem da postignete tečnost i samopouzdanje kroz personalizovane online časove.',
     'hero.exploreClasses': 'Istražite časove',
     'hero.bookTrial': 'Rezervišite besplatan probni čas',
     
