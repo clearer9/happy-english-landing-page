@@ -25,8 +25,8 @@ const Hero = () => {
       </div>
       <div className="relative">
         <img
-          src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
-          alt="Students learning with laptops and smiling in classroom"
+          src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
+          alt="Woman learning English online with laptop"
           className="rounded-xl shadow-xl w-full h-auto object-cover aspect-[4/3]"
         />
       </div>
