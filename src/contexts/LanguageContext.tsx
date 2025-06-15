@@ -23,6 +23,15 @@ const translations = {
     'hero.exploreClasses': 'Explore Classes',
     'hero.bookTrial': 'Book a Free Trial',
     
+    // Affordable Classes
+    'affordable.title': 'Classes are very affordable, fun and entertaining',
+    'affordable.subtitle': 'We offer online English classes tailored just for you:',
+    'affordable.business': 'Business English for professionals',
+    'affordable.kids': 'Fun classes for children',
+    'affordable.everyday': 'Everyday English for immigrants',
+    'affordable.interview': 'Interview preparation and CV help',
+    'affordable.travel': 'English for travel and adventures',
+    
     // Services
     'services.title': 'Find the Perfect Class for You',
     'services.subtitle': "Whether you're a beginner or an advanced learner, I have a class that fits your needs.",
@@ -51,9 +60,18 @@ const translations = {
     
     // Hero
     'hero.title': 'Otključajte svoj potencijal engleskog, lekciju po lekciju',
-    'hero.subtitle': 'Dobrodošli! Zovem se Milica i kao nastavnica engleskog jezika posvećena sam tome da vam pomognem da razvijete tečnost i samopouzdanje kroz online časove prilagođene upravo vama.',
+    'hero.subtitle': 'Zovem se Milica i kao nastavnica engleskog jezika posvećena sam tome da vam pomognem da razvijete tečnost i samopouzdanje kroz online časove prilagođene upravo vama.',
     'hero.exploreClasses': 'Istražite časove',
     'hero.bookTrial': 'Rezervišite besplatan probni čas',
+    
+    // Affordable Classes
+    'affordable.title': 'Časovi su vrlo pristupačni, zabavni i zanimljivi',
+    'affordable.subtitle': 'Nudimo online časove engleskog jezika prilagođene baš vama:',
+    'affordable.business': 'Poslovni engleski za profesionalce',
+    'affordable.kids': 'Zanimljivi časovi za decu',
+    'affordable.everyday': 'Svakodnevni engleski za doseljenike',
+    'affordable.interview': 'Priprema za intervju i pomoć oko CV-a',
+    'affordable.travel': 'Engleski za putovanja i avanture',
     
     // Services
     'services.title': 'Pronađite savršen čas za sebe',
