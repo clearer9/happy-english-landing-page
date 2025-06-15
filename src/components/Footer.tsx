@@ -10,11 +10,6 @@ const Footer = () => {
         <p className="text-sm text-muted-foreground">
           © {new Date().getFullYear()} Global English Boost. {t('footer.rights')}
         </p>
-        <nav className="flex gap-4 text-sm text-muted-foreground">
-          <a href="#" className="hover:text-primary transition-colors">Twitter</a>
-          <a href="#" className="hover:text-primary transition-colors">LinkedIn</a>
-          <a href="#" className="hover:text-primary transition-colors">{t('footer.privacy')}</a>
-        </nav>
       </div>
     </footer>
   );
