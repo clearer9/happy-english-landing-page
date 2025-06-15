@@ -13,9 +13,14 @@ const Contact = () => {
       <p className="text-lg text-muted-foreground mt-4 max-w-2xl mx-auto">
         {t('contact.subtitle')}
       </p>
-      <Button size="lg" className="mt-8" onClick={() => navigate('/contact-form')}>
-        {t('contact.bookConsultation')}
-      </Button>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+        <Button size="lg" onClick={() => navigate('/book-consultation')}>
+          {t('contact.bookConsultation')}
+        </Button>
+        <Button size="lg" variant="outline" onClick={() => navigate('/contact-form')}>
+          Send Message
+        </Button>
+      </div>
     </section>
   );
 };
