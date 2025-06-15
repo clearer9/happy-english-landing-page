@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState } from 'react';
 
 type Language = 'en' | 'sr';
@@ -50,7 +51,7 @@ const translations = {
     
     // Hero
     'hero.title': 'Otključajte svoj potencijal engleskog, lekciju po lekciju',
-    'hero.subtitle': 'Dobrodošli! Ja sam Milica, nastavnica engleskog jezika posvećena tome da vam pomognem da postignete tečnost i samopouzdanje kroz personalizovane online časove.',
+    'hero.subtitle': 'Dobrodošli! Zovem se Milica i kao nastavnica engleskog jezika posvećena sam tome da vam pomognem da razvijete tečnost i samopouzdanje kroz online časove prilagođene upravo vama.',
     'hero.exploreClasses': 'Istražite časove',
     'hero.bookTrial': 'Rezervišite besplatan probni čas',
     
